@@ -1,5 +1,5 @@
 {% set name = "hyperlink" %}
-{% set version = "17.3.1" %}
+{% set version = "19.0.0" %}
 
 package:
   name: {{ name }}
@@ -7,19 +7,20 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bc4ffdbde9bdad204d507bd8f554f16bba82dd356f6130cb16f41422909c33bc
+  sha256: 4288e34705da077fada1111a24a0aa08bb1e76699c9ce49876af722441845654
 
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
+    - idna >=2.6
 
 test:
   imports:
@@ -37,3 +38,4 @@ about:
 extra:
   recipe-maintainers:
     - isuruf
+    - synapticarbors

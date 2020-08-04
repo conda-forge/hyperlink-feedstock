@@ -5,7 +5,7 @@ Home: https://github.com/python-hyper/hyperlink
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Immutable, Pythonic, correct URLs.
 

@@ -1,5 +1,5 @@
 {% set name = "hyperlink" %}
-{% set version = "20.0.1" %}
+{% set version = "21.0.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 47fcc7cd339c6cb2444463ec3277bdcfe142c8b1daf2160bdd52248deec815af
+  sha256: 427af957daa58bc909471c6c40f74c5450fa123dd093fc53efd2e91d2705a56b
 
 build:
   number: 0
@@ -15,8 +15,8 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.6
     - pip
   run:
     - python

@@ -5,11 +5,13 @@ Home: https://github.com/python-hyper/hyperlink
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hyperlink-feedstock/blob/master/LICENSE.txt)
 
 Summary: Immutable, Pythonic, correct URLs.
 
+Development: https://github.com/python-hyper/hyperlink
 
+Documentation: http://hyperlink.readthedocs.io/en/latest/
 
 Current build status
 ====================

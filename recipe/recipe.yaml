@@ -18,7 +18,7 @@ build:
 
 requirements:
   host:
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - setuptools
     - pip
   run:
@@ -30,7 +30,7 @@ tests:
       imports:
         - hyperlink
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version: ${{ python_min }}.*
 
 about:
   license: MIT
